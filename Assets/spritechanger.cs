@@ -8,7 +8,7 @@ public class spritechanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moneyTracker.companyTwo >= 3)
+        if (moneyTracker.companyTwo == 3 && earthxstock.earthxValue == 10000)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = image1;
             earthxstock.earthxValue -= 2000;
